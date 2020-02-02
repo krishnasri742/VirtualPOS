@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>apiPortalUrl</key>
+	<string>https://apidev.caymangateway.com/apireport/portal/</string>
+	<key>apiTransactionUrl</key>
+	<string>https://apidev.caymangateway.com/apiv2/three-step</string>
+	<key>prodPortalUrl</key>
+	<string>https://caymangateway.com/apireport/portal/</string>
+	<key>prodTransactionUrl</key>
+	<string>https://api.caymangateway.com/apiv2/three-step</string>
+</dict>
+</plist>

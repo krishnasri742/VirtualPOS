@@ -1,0 +1,77 @@
+PODS:
+  - Alamofire (4.0.0)
+  - AlamofireImage (3.1.0):
+    - Alamofire (~> 4.0)
+  - DropDown (2.3.13)
+  - IQKeyboardManagerSwift (6.5.4)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - ObjectMapper (3.5.1)
+  - PromiseKit (4.5.2):
+    - PromiseKit/Foundation (= 4.5.2)
+    - PromiseKit/QuartzCore (= 4.5.2)
+    - PromiseKit/UIKit (= 4.5.2)
+  - PromiseKit/CorePromise (4.5.2)
+  - PromiseKit/Foundation (4.5.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.5.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.5.2):
+    - PromiseKit/CorePromise
+  - ReachabilitySwift (4.3.1)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+  - SwiftyJSON (4.0.0)
+  - TransitionableTab (0.1.3)
+  - XCGLogger (6.0.4):
+    - XCGLogger/Core (= 6.0.4)
+  - XCGLogger/Core (6.0.4):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - Alamofire (= 4.0)
+  - AlamofireImage (= 3.1)
+  - DropDown
+  - IQKeyboardManagerSwift (>= 5.0.0)
+  - ObjectMapper
+  - PromiseKit (= 4.5.2)
+  - ReachabilitySwift (~> 4.3.0)
+  - SwiftMessages
+  - SwiftyJSON (~> 4.0.0)
+  - TransitionableTab (~> 0.1.2)
+  - XCGLogger (~> 6.0.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - DropDown
+    - IQKeyboardManagerSwift
+    - ObjcExceptionBridging
+    - ObjectMapper
+    - PromiseKit
+    - ReachabilitySwift
+    - SwiftMessages
+    - SwiftyJSON
+    - TransitionableTab
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  PromiseKit: 743e497a5f505a470d3bbbf4ce0663c1268af0a4
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  TransitionableTab: f67cb3bb0c582aef2c560884b1822897bd6373a2
+  XCGLogger: 4fc1bc0bdd5828cb8dc8da7a843536cda1bea8f3
+
+PODFILE CHECKSUM: 94cd48bd550fc1cd26e2cae75473f5791bda62cb
+
+COCOAPODS: 1.7.5

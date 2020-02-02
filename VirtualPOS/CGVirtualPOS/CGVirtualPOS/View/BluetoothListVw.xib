@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto_condensed_bold.ttf">
+            <string>RobotoCondensed-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BluetoothListVw" customModule="CGVirtualPOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhV-7C-fcP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="568"/>
+                    <connections>
+                        <action selector="hideTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="SpK-1O-aw3"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sz0-WJ-icm">
+                    <rect key="frame" x="67" y="144" width="280" height="280"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xwf-mL-Phl">
+                            <rect key="frame" x="0.0" y="37" width="280" height="243"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Lists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypZ-qW-N6A">
+                            <rect key="frame" x="106" y="10" width="68" height="17"/>
+                            <fontDescription key="fontDescription" name="RobotoCondensed-Bold" family="Roboto Condensed" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="280" id="DTJ-XF-pyy"/>
+                        <constraint firstAttribute="bottom" secondItem="xwf-mL-Phl" secondAttribute="bottom" id="FiH-Rr-DLP"/>
+                        <constraint firstAttribute="width" constant="280" id="Oan-RD-ybb"/>
+                        <constraint firstAttribute="trailing" secondItem="xwf-mL-Phl" secondAttribute="trailing" id="Qx4-g1-WFH"/>
+                        <constraint firstItem="xwf-mL-Phl" firstAttribute="leading" secondItem="Sz0-WJ-icm" secondAttribute="leading" id="ZtC-C5-moF"/>
+                        <constraint firstItem="xwf-mL-Phl" firstAttribute="top" secondItem="ypZ-qW-N6A" secondAttribute="bottom" constant="10" id="c0h-c8-XHy"/>
+                        <constraint firstItem="ypZ-qW-N6A" firstAttribute="centerX" secondItem="Sz0-WJ-icm" secondAttribute="centerX" id="hYT-jc-ZsQ"/>
+                        <constraint firstItem="ypZ-qW-N6A" firstAttribute="top" secondItem="Sz0-WJ-icm" secondAttribute="top" constant="10" id="vif-hB-4co"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.20077054794520549" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yhV-7C-fcP" secondAttribute="trailing" id="3qt-oZ-qXW"/>
+                <constraint firstItem="yhV-7C-fcP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="B79-DN-bdl"/>
+                <constraint firstItem="Sz0-WJ-icm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Etn-gl-7aI"/>
+                <constraint firstItem="yhV-7C-fcP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="-20" id="J9E-qL-gu2"/>
+                <constraint firstItem="Sz0-WJ-icm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="L5t-K4-6GX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="yhV-7C-fcP" secondAttribute="bottom" id="vsf-Mq-VhS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="popUpVw" destination="Sz0-WJ-icm" id="Qbd-4A-O0D"/>
+                <outlet property="tblListVw" destination="xwf-mL-Phl" id="DsU-SQ-qQR"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="43.206521739130437"/>
+        </view>
+    </objects>
+</document>

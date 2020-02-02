@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProductSans-Regular.ttf">
+            <string>ProductSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomView" customModule="HeyNetwork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXB-vI-sAF">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezr-52-mZ7">
+                            <rect key="frame" x="10" y="0.0" width="75" height="50"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWq-KQ-fyz">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                    <fontDescription key="fontDescription" name="ProductSans-Regular" family="Product Sans" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="IWq-KQ-fyz" secondAttribute="bottom" id="2Xs-oV-ANT"/>
+                                <constraint firstItem="IWq-KQ-fyz" firstAttribute="leading" secondItem="ezr-52-mZ7" secondAttribute="leading" id="DBt-56-b6O"/>
+                                <constraint firstAttribute="height" constant="50" id="NFp-2M-fOW"/>
+                                <constraint firstItem="IWq-KQ-fyz" firstAttribute="top" secondItem="ezr-52-mZ7" secondAttribute="top" id="Svo-G9-IwW"/>
+                                <constraint firstAttribute="width" constant="75" id="dOQ-6c-oc2"/>
+                                <constraint firstAttribute="trailing" secondItem="IWq-KQ-fyz" secondAttribute="trailing" id="mHR-L8-csZ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfo-SD-QzQ">
+                            <rect key="frame" x="290" y="0.0" width="75" height="50"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKY-Ja-AX5">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="50"/>
+                                    <fontDescription key="fontDescription" name="ProductSans-Regular" family="Product Sans" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="HC7-09-bXM"/>
+                                <constraint firstAttribute="trailing" secondItem="FKY-Ja-AX5" secondAttribute="trailing" id="HJA-Xy-ERK"/>
+                                <constraint firstItem="FKY-Ja-AX5" firstAttribute="top" secondItem="Cfo-SD-QzQ" secondAttribute="top" id="TEh-O1-o95"/>
+                                <constraint firstItem="FKY-Ja-AX5" firstAttribute="leading" secondItem="Cfo-SD-QzQ" secondAttribute="leading" id="doc-V7-96f"/>
+                                <constraint firstAttribute="bottom" secondItem="FKY-Ja-AX5" secondAttribute="bottom" id="q2z-4j-yN7"/>
+                                <constraint firstAttribute="width" constant="75" id="ybv-MI-vt4"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ezr-52-mZ7" firstAttribute="leading" secondItem="KUT-Qx-n3B" secondAttribute="leading" constant="10" id="UKJ-cl-Qct"/>
+                        <constraint firstItem="ezr-52-mZ7" firstAttribute="centerY" secondItem="KUT-Qx-n3B" secondAttribute="centerY" id="bok-7n-Sa8"/>
+                        <constraint firstItem="KUT-Qx-n3B" firstAttribute="trailing" secondItem="Cfo-SD-QzQ" secondAttribute="trailing" constant="10" id="bpm-rL-bXG"/>
+                        <constraint firstItem="Cfo-SD-QzQ" firstAttribute="centerY" secondItem="KUT-Qx-n3B" secondAttribute="centerY" id="fEs-Nf-2NC"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="KUT-Qx-n3B"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vXB-vI-sAF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="L0T-BX-Hq6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vXB-vI-sAF" secondAttribute="trailing" id="U1s-le-iBI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="vXB-vI-sAF" secondAttribute="bottom" id="Ypd-Ay-t4V"/>
+                <constraint firstItem="vXB-vI-sAF" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="cdr-C7-4Me"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="leftBtn" destination="IWq-KQ-fyz" id="mUb-Lf-STr"/>
+                <outlet property="leftView" destination="ezr-52-mZ7" id="Yog-ce-Cct"/>
+                <outlet property="mainView" destination="vXB-vI-sAF" id="lTz-p6-QRt"/>
+                <outlet property="rightBtn" destination="FKY-Ja-AX5" id="Oyj-YO-I0B"/>
+                <outlet property="rightView" destination="Cfo-SD-QzQ" id="8Zc-OT-p4e"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="roboto_condensed_bold_regular.ttf">
+            <string>RobotoCondensed-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopUpVw" customModule="CGVirtualPOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N75-Jc-dvJ">
+                    <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                    <connections>
+                        <action selector="hideTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="hso-Sa-qei"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHu-3z-eBd">
+                    <rect key="frame" x="254" y="80" width="150" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z30-nX-06T">
+                            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                            <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="profileTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Pz-PC-K5r"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcG-gr-jzW">
+                            <rect key="frame" x="0.0" y="50" width="150" height="50"/>
+                            <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="btnLogoutTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ftc-R7-iaM"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_profile" translatesAutoresizingMaskIntoConstraints="NO" id="7JP-ad-fa1">
+                            <rect key="frame" x="10" y="15" width="20" height="20"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logout" translatesAutoresizingMaskIntoConstraints="NO" id="oAA-yl-MpU">
+                            <rect key="frame" x="10" y="65" width="20" height="20"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="z30-nX-06T" firstAttribute="height" secondItem="CHu-3z-eBd" secondAttribute="height" multiplier="0.5:1" id="1Xj-7G-c5m"/>
+                        <constraint firstAttribute="bottom" secondItem="LcG-gr-jzW" secondAttribute="bottom" id="1sD-7f-tBy"/>
+                        <constraint firstAttribute="trailing" secondItem="z30-nX-06T" secondAttribute="trailing" id="8L4-xQ-bDD"/>
+                        <constraint firstItem="LcG-gr-jzW" firstAttribute="leading" secondItem="CHu-3z-eBd" secondAttribute="leading" id="LWp-2M-aMG"/>
+                        <constraint firstAttribute="width" constant="150" id="Yfi-Ru-LgL"/>
+                        <constraint firstItem="z30-nX-06T" firstAttribute="leading" secondItem="CHu-3z-eBd" secondAttribute="leading" id="YgE-iO-UVT"/>
+                        <constraint firstAttribute="trailing" secondItem="LcG-gr-jzW" secondAttribute="trailing" id="fOI-k8-mqD"/>
+                        <constraint firstItem="7JP-ad-fa1" firstAttribute="leading" secondItem="CHu-3z-eBd" secondAttribute="leading" constant="10" id="h9C-NL-5Es"/>
+                        <constraint firstItem="7JP-ad-fa1" firstAttribute="centerY" secondItem="z30-nX-06T" secondAttribute="centerY" id="hBD-eZ-BAM"/>
+                        <constraint firstItem="LcG-gr-jzW" firstAttribute="height" secondItem="z30-nX-06T" secondAttribute="height" id="iAS-ro-PVD"/>
+                        <constraint firstItem="oAA-yl-MpU" firstAttribute="leading" secondItem="CHu-3z-eBd" secondAttribute="leading" constant="10" id="l5r-yc-BNd"/>
+                        <constraint firstAttribute="height" constant="100" id="oYr-6I-ulS"/>
+                        <constraint firstItem="z30-nX-06T" firstAttribute="top" secondItem="CHu-3z-eBd" secondAttribute="top" id="rOD-kh-Pem"/>
+                        <constraint firstItem="oAA-yl-MpU" firstAttribute="centerY" secondItem="LcG-gr-jzW" secondAttribute="centerY" id="yD8-wD-mV9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.19675727739726026" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="N75-Jc-dvJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZnL-LQ-7y4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="N75-Jc-dvJ" secondAttribute="bottom" id="bd2-4i-9qh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CHu-3z-eBd" secondAttribute="trailing" constant="10" id="hJV-Eb-NPH"/>
+                <constraint firstItem="CHu-3z-eBd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="iWV-hw-4ep"/>
+                <constraint firstItem="N75-Jc-dvJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lUN-iW-WLq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="N75-Jc-dvJ" secondAttribute="trailing" id="vj8-6V-UgQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnLogout" destination="LcG-gr-jzW" id="v9d-a0-2tH"/>
+                <outlet property="btnProfile" destination="z30-nX-06T" id="8GV-0r-kRT"/>
+                <outlet property="vwPopUp" destination="CHu-3z-eBd" id="5tn-Tb-lY1"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="logout" width="20" height="20"/>
+        <image name="my_profile" width="20" height="20"/>
+    </resources>
+</document>
